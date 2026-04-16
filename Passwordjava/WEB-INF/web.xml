@@ -1,0 +1,11 @@
+<web-app>
+    <servlet>
+        <servlet-name>PasswordServlet</servlet-name>
+        <servlet-class>PasswordServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>PasswordServlet</servlet-name>
+        <url-pattern>/check</url-pattern>
+    </servlet-mapping>
+</web-app>

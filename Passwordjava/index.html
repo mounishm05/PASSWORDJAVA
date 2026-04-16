@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Password Tool</h1>
+
+    <!-- GENERATOR -->
+    <h3>Generate Password</h3>
+    <form action="check" method="post">
+        <input type="hidden" name="action" value="generate">
+
+        <input type="number" name="length" placeholder="Enter length" required>
+
+        <div class="options">
+            <label><input type="checkbox" name="upper"> Uppercase</label>
+            <label><input type="checkbox" name="lower"> Lowercase</label>
+            <label><input type="checkbox" name="numbers"> Numbers</label>
+            <label><input type="checkbox" name="symbols"> Symbols</label>
+        </div>
+
+        <button type="submit">Generate</button>
+    </form>
+
+    <hr>
+
+    <!-- CHECKER -->
+    <h3>Check Password Strength</h3>
+    <form action="check" method="post">
+        <input type="hidden" name="action" value="check">
+
+        <input type="text" name="password" placeholder="Enter password" required>
+
+        <button type="submit">Check</button>
+    </form>
+</div>
+
+</body>
+</html>
